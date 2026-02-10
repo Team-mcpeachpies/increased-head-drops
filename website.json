@@ -1,0 +1,45 @@
+{
+	"title": "Increased Head Drops",
+	"description_short": "An additional way to get Creeper, Zombie, Skeleton, and Player head drops",
+	"description": "Creepers, Zombies, Skeletons, and Players gain a rare chance to drop their heads when killed by players",
+	"youtube": null,
+	"list_on_site": true,
+	"icon": "mcpeachpies_increased_head_drops/pack.png",
+	"features": [
+		{
+			"label": "Player heads will drop when killed by a charged Creeper. Player heads have a rare chance of being dropped when killed by another player"
+		},
+		{
+			"label": "Zombie, Skeleton, and Creeper heads have a rare chance of being dropped when killed by a player"
+		},
+		{
+			"label": "Steve heads can be found as rare loot in chests in Dungeons, Pillager Outposts, Woodland mansions, Jungle temples, Bastions, and Strongholds"
+		},
+		{
+			"label": "Jungle Temples fire poison tipped arrows"
+		},
+		{
+			"label": "Compatible with Minecraft 1.13 and up, last tested on Minecraft 1.20"
+		},
+		{
+			"label": "Alternative Download for compatibility with <a href=\"/datapacks/?renewable_pigstep\" class=\"read-more\">Renewable Pigstep<a>"
+		},
+		{
+			"label": "See <a href=\"/datapacks/?player_head_drops\" class=\"read-more\">Player Head Drops<a> for only head drops from players"
+		}
+	],
+	"downloads": [
+		{
+			"label": "Download",
+			"file": "https://github.com/mcpeachpies/mcpeachpies-datapacks/releases/latest/download/mcpeachpies_increased_head_drops.zip"
+		},
+		{
+			"label": "Download (Plus Renewable Pigstep)",
+			"file": "https://github.com/mcpeachpies/mcpeachpies-datapacks/releases/latest/download/mcpeachpies_increased_head_drops_renewable_pigstep.zip"
+		},
+		{
+			"label": "Source Code",
+			"file": "https://github.com/mcpeachpies/increased-head-drops"
+		}
+	]
+}
