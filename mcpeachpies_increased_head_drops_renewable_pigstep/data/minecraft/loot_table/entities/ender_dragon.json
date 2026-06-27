@@ -43,7 +43,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "minecraft:creeper",
+                "minecraft:entity_type": "minecraft:creeper",
                 "nbt": "{powered:1b}"
               }
             }
