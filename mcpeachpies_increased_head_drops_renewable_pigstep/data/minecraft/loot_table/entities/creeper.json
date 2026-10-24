@@ -5,7 +5,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:gunpowder",
           "modifier": [
             {
               "type": "minecraft:set_count",
@@ -19,17 +18,25 @@
               "type": "minecraft:enchanted_count_increase",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
+                "max": 1.0,
+                "min": 0.0
               },
               "enchantment": "minecraft:looting"
             }
-          ]
+          ],
+          "name": "minecraft:gunpowder"
         }
       ],
       "rolls": 1
     },
     {
+      "condition": {
+        "type": "minecraft:entity_properties",
+        "entity": "attacker",
+        "predicate": {
+          "minecraft:entity_type": "#minecraft:skeletons"
+        }
+      },
       "entries": [
         {
           "type": "minecraft:tag",
@@ -37,24 +44,9 @@
           "items": "#minecraft:creeper_drop_music_discs"
         }
       ],
-      "rolls": 1,
-      "condition": {
-        "type": "minecraft:entity_properties",
-        "entity": "attacker",
-        "predicate": {
-          "minecraft:entity_type": "#minecraft:skeletons"
-        }
-      }
+      "rolls": 1
     },
     {
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:creeper_head"
-        }
-      ],
-      "rolls": 1,
       "condition": {
         "type": "minecraft:all_of",
         "terms": [
@@ -72,28 +64,31 @@
             "unenchanted_chance": 0.025
           }
         ]
-      }
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_pigstep"
+          "name": "minecraft:creeper_head"
         }
       ],
+      "rolls": 1
+    },
+    {
       "condition": {
         "type": "minecraft:entity_properties",
         "entity": "attacker",
         "predicate": {
-          "minecraft:entity_type": [
-            "minecraft:piglin",
-            "minecraft:piglin_brute",
-            "minecraft:zombified_piglin"
-          ]
+          "minecraft:entity_type": "minecraft:piglin"
         }
-      }
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "minecraft:music_disc_pigstep"
+        }
+      ],
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:entities/creeper"
