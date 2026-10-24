@@ -2,14 +2,14 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:dragon_head"
         }
       ],
-      "rolls": 1.0,
       "condition": {
         "type": "minecraft:all_of",
         "terms": [
@@ -18,37 +18,16 @@
           },
           {
             "type": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "unenchanted_chance": 0.025,
             "enchanted_chance": {
               "type": "minecraft:linear",
               "base": 0.035,
               "per_level_above_first": 0.01
-            },
-            "enchantment": "minecraft:looting",
-            "unenchanted_chance": 0.025
+            }
           }
         ]
       }
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:dragon_head",
-          "condition": {
-            "type": "minecraft:entity_properties",
-            "entity": "direct_attacker",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:creeper",
-              "nbt": "{powered:1b}"
-            }
-          },
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": 1
-          }
-        }
-      ]
     }
   ],
   "random_sequence": "minecraft:entities/ender_dragon"
